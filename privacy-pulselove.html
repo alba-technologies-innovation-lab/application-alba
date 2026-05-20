@@ -3,343 +3,504 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialité - PulseLove</title>
+  <title>Applications Alba - Site officiel</title>
+
   <style>
-    body{margin:0;font-family:Arial,sans-serif;background:#f4f6f8;color:#1f2933;line-height:1.7}
-    header{background:linear-gradient(135deg,#be185d,#7f1d1d);color:white;padding:55px 20px;text-align:center}
-    header h1{margin:0;font-size:36px}
-    header p{max-width:850px;margin:15px auto 0;color:#ffe4e6}
-    nav{background:white;padding:14px;text-align:center;border-bottom:1px solid #ddd;position:sticky;top:0}
-    nav a{margin:6px 10px;color:#111827;text-decoration:none;font-weight:bold;font-size:14px}
-    section{max-width:1000px;margin:28px auto;background:white;padding:32px 24px;border-radius:16px;box-shadow:0 4px 18px rgba(0,0,0,.06)}
-    h2{margin-top:0;color:#111827}
-    h3{margin-top:28px;color:#111827}
-    .alert{background:#fff1f2;border-left:5px solid #be185d;padding:16px;border-radius:10px}
-    .note{background:#f1f5f9;border-left:5px solid #111827;padding:16px;border-radius:10px}
-    ul{padding-left:22px}
-    footer{text-align:center;padding:30px;color:#6b7280;font-size:14px}
-    a{color:#be185d}
-    @media(max-width:600px){header h1{font-size:28px}section{margin:18px 10px;padding:24px 16px}nav a{display:inline-block}}
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Arial,sans-serif;
+      background:#f4f6f8;
+      color:#1f2933;
+      line-height:1.7;
+    }
+
+    header{
+      background:linear-gradient(135deg,#0f172a,#1e3a8a);
+      color:white;
+      padding:70px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:48px;
+      margin-bottom:20px;
+    }
+
+    header p{
+      max-width:950px;
+      margin:auto;
+      color:#dbeafe;
+      font-size:18px;
+    }
+
+    nav{
+      background:white;
+      padding:16px;
+      text-align:center;
+      border-bottom:1px solid #ddd;
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    nav a{
+      margin:8px 12px;
+      color:#111827;
+      text-decoration:none;
+      font-weight:bold;
+      font-size:14px;
+    }
+
+    nav a:hover{
+      color:#2563eb;
+    }
+
+    section{
+      max-width:1100px;
+      margin:30px auto;
+      background:white;
+      padding:35px 25px;
+      border-radius:18px;
+      box-shadow:0 4px 18px rgba(0,0,0,.06);
+    }
+
+    h2{
+      margin-top:0;
+      margin-bottom:20px;
+      color:#111827;
+      font-size:32px;
+    }
+
+    h3{
+      margin-top:28px;
+      color:#111827;
+    }
+
+    p{
+      margin-bottom:16px;
+    }
+
+    ul{
+      padding-left:22px;
+      margin-bottom:18px;
+    }
+
+    .apps{
+      display:flex;
+      flex-wrap:wrap;
+      gap:20px;
+      justify-content:center;
+      margin-top:35px;
+    }
+
+    .card{
+      background:#f8fafc;
+      border-radius:18px;
+      padding:28px;
+      width:240px;
+      text-decoration:none;
+      color:#111827;
+      box-shadow:0 3px 12px rgba(0,0,0,.05);
+      transition:.2s;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+      background:white;
+    }
+
+    .card h3{
+      margin-top:0;
+      margin-bottom:12px;
+      font-size:24px;
+    }
+
+    .alert{
+      background:#eff6ff;
+      border-left:5px solid #2563eb;
+      padding:16px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+
+    .warning{
+      background:#fff1f2;
+      border-left:5px solid #be123c;
+      padding:16px;
+      border-radius:10px;
+      margin-top:20px;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px 20px;
+      color:#6b7280;
+      font-size:14px;
+    }
+
+    a{
+      color:#2563eb;
+    }
+
+    @media(max-width:700px){
+
+      header h1{
+        font-size:34px;
+      }
+
+      section{
+        margin:18px 10px;
+        padding:26px 18px;
+      }
+
+      nav a{
+        display:inline-block;
+      }
+
+    }
+
   </style>
 </head>
 
 <body>
 
 <header>
-  <h1>Politique de confidentialité - PulseLove</h1>
+
+  <h1>Applications Alba</h1>
+
   <p>
-    Politique officielle concernant l’application PulseLove, ses fonctionnalités sociales,
-    la protection des utilisateurs, la confidentialité, la modération et la sécurité.
+    Site officiel regroupant les politiques de confidentialité,
+    les informations de sécurité, les règles communautaires,
+    les contenus légaux et les informations importantes
+    des applications développées par Alba Group.
   </p>
+
 </header>
 
 <nav>
-  <a href="index.html">Accueil</a>
-  <a href="#donnees">Données</a>
-  <a href="#social">Social</a>
-  <a href="#securite">Sécurité</a>
+
+  <a href="#applications">Applications</a>
   <a href="#mineurs">Mineurs</a>
-  <a href="#droits">Droits</a>
+  <a href="#publicite">Publicité</a>
+  <a href="#donnees">Données</a>
+  <a href="#contenu">Contenu</a>
+  <a href="#confidentialite">Confidentialité</a>
   <a href="#contact">Contact</a>
+
 </nav>
 
-<section>
-  <h2>1. Présentation de l’application</h2>
-  <p>
-    PulseLove est une application sociale pouvant proposer des fonctionnalités de profil,
-    de discussion, d’interactions, de likes, de moments partagés, de commentaires,
-    de notifications et de mise en relation entre utilisateurs.
-  </p>
+<section id="applications">
+
+  <h2>Applications officielles</h2>
 
   <p>
-    L’objectif de PulseLove est de proposer un espace d’échange respectueux, sécurisé
-    et conforme aux règles des plateformes Android et Google Play.
+    Chaque application possède ses propres fonctionnalités,
+    règles de sécurité, politique de confidentialité
+    et protections utilisateur.
   </p>
 
-  <div class="alert">
-    L’utilisation de PulseLove implique le respect des autres utilisateurs, de leur vie privée,
-    de leur sécurité et des règles de bonne conduite.
+  <div class="apps">
+
+    <a class="card" href="privacy-pulselove.html">
+
+      <h3>PulseLove</h3>
+
+      <p>
+        Application sociale, rencontre et communauté.
+      </p>
+
+    </a>
+
+    <a class="card" href="privacy-boutique7ab.html">
+
+      <h3>Boutique 7 A&B</h3>
+
+      <p>
+        Boutique en ligne et services commerciaux.
+      </p>
+
+    </a>
+
+    <a class="card" href="privacy-alba-escape.html">
+
+      <h3>Alba Escape</h3>
+
+      <p>
+        Jeu mobile Android et contenu interactif.
+      </p>
+
+    </a>
+
+    <a class="card" href="privacy-alba-play.html">
+
+      <h3>Alba Play</h3>
+
+      <p>
+        Mini-jeux, récompenses et divertissement.
+      </p>
+
+    </a>
+
   </div>
-</section>
 
-<section id="donnees">
-  <h2>2. Données pouvant être collectées</h2>
-
-  <p>
-    Selon les fonctionnalités utilisées, PulseLove peut collecter ou traiter certaines données
-    nécessaires au fonctionnement de l’application.
-  </p>
-
-  <h3>Données de compte</h3>
-  <ul>
-    <li>Identifiant utilisateur unique.</li>
-    <li>Adresse e-mail si une connexion est utilisée.</li>
-    <li>Pseudo, nom affiché ou informations de profil.</li>
-    <li>Photo de profil si l’utilisateur en ajoute une.</li>
-    <li>Préférences de compte et paramètres de confidentialité.</li>
-  </ul>
-
-  <h3>Données sociales</h3>
-  <ul>
-    <li>Messages envoyés ou reçus.</li>
-    <li>Likes, réactions, commentaires ou interactions.</li>
-    <li>Publications, moments, contenus partagés ou réponses.</li>
-    <li>Signalements, blocages ou actions de modération.</li>
-  </ul>
-
-  <h3>Données techniques</h3>
-  <ul>
-    <li>Type d’appareil.</li>
-    <li>Version Android.</li>
-    <li>Données de diagnostic.</li>
-    <li>Erreurs techniques ou crashs.</li>
-    <li>Identifiants nécessaires aux notifications push.</li>
-  </ul>
-
-  <h3>Données publicitaires ou statistiques</h3>
-  <p>
-    Si l’application utilise de la publicité ou des statistiques, certains services tiers peuvent
-    traiter des identifiants techniques ou publicitaires selon leurs propres règles.
-  </p>
-</section>
-
-<section>
-  <h2>3. Utilisation des données</h2>
-
-  <p>Les données peuvent être utilisées pour :</p>
-
-  <ul>
-    <li>Créer et gérer un compte utilisateur.</li>
-    <li>Afficher un profil dans l’application.</li>
-    <li>Permettre les messages, likes, commentaires et interactions.</li>
-    <li>Envoyer des notifications si elles sont acceptées.</li>
-    <li>Améliorer la stabilité et les performances de l’application.</li>
-    <li>Prévenir les abus, faux profils, spams, harcèlements ou comportements dangereux.</li>
-    <li>Assurer la modération et la sécurité de la communauté.</li>
-    <li>Respecter les obligations légales ou les règles des plateformes.</li>
-  </ul>
-</section>
-
-<section id="social">
-  <h2>4. Règles sociales et comportement interdit</h2>
-
-  <p>
-    PulseLove doit rester un espace respectueux. Les comportements suivants sont interdits :
-  </p>
-
-  <ul>
-    <li>Harcèlement, insultes, menaces ou intimidation.</li>
-    <li>Discours haineux, raciste, violent ou discriminatoire.</li>
-    <li>Contenu sexuellement explicite, choquant ou illégal.</li>
-    <li>Usurpation d’identité ou faux profil malveillant.</li>
-    <li>Publication de données privées d’une autre personne.</li>
-    <li>Spam, publicité abusive ou arnaque.</li>
-    <li>Incitation à la violence, à l’automutilation ou à des actes dangereux.</li>
-    <li>Utilisation de l’application pour surveiller, manipuler ou nuire à quelqu’un.</li>
-  </ul>
-
-  <div class="note">
-    Tout compte ou contenu ne respectant pas ces règles peut être supprimé, limité,
-    bloqué ou signalé selon la gravité de la situation.
-  </div>
-</section>
-
-<section id="securite">
-  <h2>5. Protection, blocage et signalement</h2>
-
-  <h3>Blocage utilisateur</h3>
-  <p>
-    PulseLove peut proposer une fonction permettant de bloquer un utilisateur.
-    Le blocage sert à limiter ou empêcher les interactions non souhaitées.
-  </p>
-
-  <h3>Signalement</h3>
-  <p>
-    Les utilisateurs peuvent signaler un comportement abusif, un contenu interdit,
-    un faux profil, du harcèlement ou toute situation inquiétante.
-  </p>
-
-  <h3>Modération</h3>
-  <p>
-    Les contenus signalés peuvent être examinés. Selon le cas, une action peut être prise :
-    avertissement, suppression de contenu, restriction, suspension ou suppression du compte.
-  </p>
-
-  <h3>Protection de la vie privée</h3>
-  <p>
-    Les utilisateurs ne doivent jamais publier l’adresse, le numéro de téléphone,
-    les documents personnels, les photos privées ou les informations sensibles
-    d’une autre personne sans son accord.
-  </p>
 </section>
 
 <section id="mineurs">
-  <h2>6. Protection des mineurs</h2>
+
+  <h2>Normes liées à la sécurité des mineurs</h2>
 
   <p>
-    PulseLove est une application sociale qui peut contenir des interactions entre utilisateurs.
-    Les personnes mineures doivent utiliser l’application uniquement si cela est autorisé
-    par les règles de l’application, par Google Play et par la législation applicable.
+    Les applications Alba respectent les règles de sécurité
+    imposées par Google Play concernant la protection des mineurs.
   </p>
 
   <p>
-    Les contenus mettant en danger des mineurs, les sollicitations inappropriées,
-    les comportements prédateurs ou toute tentative d’exploitation sont strictement interdits.
+    Les contenus dangereux, sexuels impliquant des mineurs,
+    les comportements prédateurs, le harcèlement,
+    les sollicitations inappropriées ou toute forme
+    d’exploitation sont strictement interdits.
   </p>
+
+  <div class="warning">
+
+    Tout comportement mettant en danger un mineur
+    peut entraîner une suppression immédiate du compte,
+    un bannissement définitif et un signalement
+    aux autorités compétentes.
+
+  </div>
+
+</section>
+
+<section id="publicite">
+
+  <h2>Identifiant publicitaire et annonces</h2>
+
+  <p>
+    Certaines applications peuvent utiliser Google AdMob
+    ou des services publicitaires compatibles Android.
+  </p>
+
+  <p>
+    Ces services peuvent utiliser des identifiants publicitaires,
+    données techniques anonymes ou informations liées à l’appareil
+    afin d’afficher des publicités adaptées.
+  </p>
+
+  <p>
+    Les utilisateurs peuvent gérer leurs préférences publicitaires
+    depuis les paramètres Google de leur appareil Android.
+  </p>
+
+</section>
+
+<section id="donnees">
+
+  <h2>Sécurité des données</h2>
+
+  <p>
+    Les applications Alba peuvent collecter certaines données
+    nécessaires au bon fonctionnement des services proposés.
+  </p>
+
+  <h3>Données pouvant être traitées</h3>
+
+  <ul>
+
+    <li>Informations de compte.</li>
+
+    <li>Adresse e-mail si utilisée.</li>
+
+    <li>Identifiant utilisateur.</li>
+
+    <li>Données techniques Android.</li>
+
+    <li>Préférences utilisateur.</li>
+
+    <li>Notifications push.</li>
+
+    <li>Données de diagnostic ou crashs.</li>
+
+    <li>Contenus publiés dans les applications sociales.</li>
+
+  </ul>
 
   <div class="alert">
-    Tout contenu ou comportement mettant en danger un mineur peut entraîner une suppression immédiate,
-    un blocage du compte et, si nécessaire, un signalement aux autorités compétentes.
+
+    Les données sont utilisées uniquement
+    pour le fonctionnement, la sécurité,
+    la stabilité ou l’amélioration des applications.
+
   </div>
+
 </section>
 
-<section>
-  <h2>7. Services tiers utilisés</h2>
+<section id="contenu">
+
+  <h2>Cible et classification du contenu</h2>
 
   <p>
-    PulseLove peut utiliser certains services tiers nécessaires au fonctionnement technique :
+    Certaines applications peuvent contenir :
   </p>
 
   <ul>
+
+    <li>Des fonctionnalités sociales.</li>
+
+    <li>Des systèmes de discussion.</li>
+
+    <li>Des contenus communautaires.</li>
+
+    <li>Des interactions entre utilisateurs.</li>
+
+    <li>Des jeux ou contenus interactifs.</li>
+
+    <li>Des achats numériques ou récompenses virtuelles.</li>
+
+  </ul>
+
+  <p>
+    Les applications sont classifiées conformément
+    aux règles Google Play et aux réglementations applicables.
+  </p>
+
+  <p>
+    Certains contenus ou fonctionnalités peuvent être limités
+    selon l’âge de l’utilisateur ou la région.
+  </p>
+
+</section>
+
+<section>
+
+  <h2>Accès aux applications</h2>
+
+  <p>
+    Certaines fonctionnalités peuvent nécessiter :
+  </p>
+
+  <ul>
+
+    <li>Une connexion Internet.</li>
+
+    <li>Un compte utilisateur.</li>
+
+    <li>L’autorisation des notifications.</li>
+
+    <li>Des permissions Android spécifiques.</li>
+
+    <li>Des services Google Play actifs.</li>
+
+  </ul>
+
+  <p>
+    Les permissions demandées dépendent des fonctionnalités utilisées.
+  </p>
+
+</section>
+
+<section id="confidentialite">
+
+  <h2>Règles de confidentialité</h2>
+
+  <p>
+    Chaque application dispose d’une politique de confidentialité dédiée
+    accessible depuis les liens officiels ci-dessus.
+  </p>
+
+  <p>
+    Les utilisateurs peuvent demander des informations,
+    corrections ou suppressions concernant certaines données personnelles
+    lorsque cela est possible.
+  </p>
+
+  <p>
+    Les applications Alba s’efforcent de respecter
+    les règles Google Play ainsi que les réglementations applicables
+    en matière de confidentialité et de sécurité numérique.
+  </p>
+
+</section>
+
+<section>
+
+  <h2>Services tiers utilisés</h2>
+
+  <ul>
+
     <li>Google Play Services.</li>
+
     <li>Firebase Authentication.</li>
-    <li>Firebase Realtime Database ou Firestore.</li>
-    <li>Firebase Cloud Messaging pour les notifications.</li>
-    <li>Firebase Crashlytics pour les erreurs techniques.</li>
-    <li>Google Analytics for Firebase pour les statistiques.</li>
-    <li>Google AdMob si des publicités sont affichées.</li>
+
+    <li>Firebase Firestore.</li>
+
+    <li>Firebase Realtime Database.</li>
+
+    <li>Firebase Cloud Messaging.</li>
+
+    <li>Firebase Analytics.</li>
+
+    <li>Firebase Crashlytics.</li>
+
+    <li>Google AdMob.</li>
+
   </ul>
 
-  <p>
-    Ces services peuvent traiter certaines données conformément à leurs propres politiques
-    de confidentialité.
-  </p>
 </section>
 
 <section>
-  <h2>8. Notifications</h2>
+
+  <h2>Responsabilité utilisateur</h2>
 
   <p>
-    PulseLove peut envoyer des notifications concernant les messages, interactions,
-    activités du compte, nouveautés ou informations importantes.
+    Chaque utilisateur reste responsable
+    des contenus qu’il publie,
+    des messages qu’il envoie
+    et de son comportement dans les applications.
   </p>
 
   <p>
-    L’utilisateur peut accepter, refuser ou désactiver les notifications depuis
-    les paramètres de son appareil Android.
-  </p>
-</section>
-
-<section>
-  <h2>9. Publicités</h2>
-
-  <p>
-    Si PulseLove affiche des publicités, celles-ci peuvent être fournies par Google AdMob.
-    Les publicités peuvent utiliser des données techniques ou publicitaires conformément
-    aux règles de Google.
+    Les contenus haineux, illégaux,
+    violents, frauduleux ou abusifs
+    peuvent être supprimés sans préavis.
   </p>
 
-  <p>
-    L’utilisateur peut gérer certains paramètres publicitaires depuis les réglages Google
-    de son appareil.
-  </p>
-</section>
-
-<section>
-  <h2>10. Conservation des données</h2>
-
-  <p>
-    Les données sont conservées uniquement pendant la durée nécessaire au fonctionnement
-    de l’application, à la sécurité, à la modération, à la gestion du compte ou aux obligations légales.
-  </p>
-
-  <p>
-    Certains contenus supprimés peuvent rester temporairement conservés dans les sauvegardes
-    techniques ou journaux de sécurité avant suppression définitive.
-  </p>
-</section>
-
-<section id="droits">
-  <h2>11. Suppression de compte et droits utilisateur</h2>
-
-  <p>
-    L’utilisateur peut demander :
-  </p>
-
-  <ul>
-    <li>L’accès aux informations liées à son compte.</li>
-    <li>La correction de données inexactes.</li>
-    <li>La suppression de son compte.</li>
-    <li>La suppression de certaines données lorsque cela est possible.</li>
-    <li>Des informations sur l’utilisation de ses données.</li>
-  </ul>
-
-  <p>
-    Pour faciliter le traitement, la demande doit préciser le nom de l’application,
-    l’adresse e-mail liée au compte si disponible, et la nature de la demande.
-  </p>
-</section>
-
-<section>
-  <h2>12. Sécurité des échanges</h2>
-
-  <p>
-    PulseLove met en place des mesures raisonnables pour protéger les échanges,
-    mais aucun système numérique ne peut garantir une sécurité absolue.
-  </p>
-
-  <p>
-    Il est recommandé de ne jamais partager de mot de passe, code bancaire,
-    document personnel, adresse exacte ou information sensible avec une personne inconnue.
-  </p>
-</section>
-
-<section>
-  <h2>13. Responsabilité de l’utilisateur</h2>
-
-  <p>
-    Chaque utilisateur est responsable des informations qu’il publie,
-    des messages qu’il envoie et de son comportement dans l’application.
-  </p>
-
-  <p>
-    L’application ne peut pas garantir l’identité réelle, les intentions ou la sincérité
-    de chaque utilisateur. La prudence reste nécessaire lors des échanges en ligne.
-  </p>
-</section>
-
-<section>
-  <h2>14. Modifications de cette politique</h2>
-
-  <p>
-    Cette politique peut être mise à jour pour s’adapter aux évolutions de l’application,
-    des règles Google Play, des services utilisés ou des obligations légales.
-  </p>
-
-  <p>
-    La date de mise à jour affichée en bas de page indique la dernière version disponible.
-  </p>
 </section>
 
 <section id="contact">
-  <h2>15. Contact officiel</h2>
+
+  <h2>Contact officiel</h2>
 
   <p>
-    Pour toute question concernant PulseLove, la confidentialité, la sécurité,
-    un signalement, une suppression de compte ou une demande liée aux données :
+    Pour toute question concernant les applications,
+    la confidentialité, la sécurité,
+    les données ou les signalements :
   </p>
 
   <p>
-    <strong>contact.alba.play@gmail.com</strong>
+
+    <strong>
+      contact.alba.play@gmail.com
+    </strong>
+
   </p>
 
   <p>
     Dernière mise à jour : 20 mai 2026.
   </p>
+
 </section>
 
 <footer>
-  © 2026 Applications Alba — Politique de confidentialité PulseLove.
+
+  © 2026 Applications Alba — Site officiel.
+
 </footer>
 
 </body>

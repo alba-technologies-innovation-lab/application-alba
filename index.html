@@ -1,96 +1,267 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Applications Alba</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Applications Alba - Site officiel</title>
 
-    <style>
-        body{
-            margin:0;
-            padding:0;
-            background:#f5f5f5;
-            font-family:Arial, sans-serif;
-            color:#222;
-            text-align:center;
-        }
+  <style>
+    * { box-sizing: border-box; }
 
-        .container{
-            max-width:700px;
-            margin:auto;
-            padding:60px 20px;
-        }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f8;
+      color: #1f2933;
+      line-height: 1.6;
+    }
 
-        h1{
-            font-size:40px;
-            margin-bottom:20px;
-        }
+    header {
+      background: linear-gradient(135deg, #111827, #1f2937);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
 
-        p{
-            font-size:18px;
-            line-height:1.6;
-        }
+    header h1 {
+      font-size: 42px;
+      margin: 0 0 15px;
+    }
 
-        .button{
-            display:inline-block;
-            margin-top:30px;
-            padding:15px 25px;
-            background:#111;
-            color:white;
-            text-decoration:none;
-            border-radius:10px;
-            font-size:18px;
-        }
+    header p {
+      max-width: 760px;
+      margin: auto;
+      font-size: 18px;
+      color: #e5e7eb;
+    }
 
-        .button:hover{
-            background:#333;
-        }
+    nav {
+      background: white;
+      padding: 14px 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-        footer{
-            margin-top:60px;
-            padding:20px;
-            font-size:14px;
-            color:#666;
-        }
+    nav a {
+      color: #111827;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
 
-        .links{
-            margin-top:30px;
-        }
+    section {
+      max-width: 950px;
+      margin: 35px auto;
+      background: white;
+      padding: 35px 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.06);
+    }
 
-        .links a{
-            margin:0 10px;
-            color:#444;
-            text-decoration:none;
-        }
-    </style>
+    h2 {
+      margin-top: 0;
+      color: #111827;
+      font-size: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 24px;
+      background: #111827;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #f9fafb;
+      padding: 20px;
+      border-radius: 14px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #111827;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #6b7280;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 32px; }
+      section { margin: 20px 12px; }
+      nav a { display: inline-block; margin: 6px; }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="container">
+<header>
+  <h1>Applications Alba</h1>
+  <p>
+    Site officiel des applications Android publiées par Alba.
+    Cette page regroupe les informations générales, les liens Google Play
+    et la politique de confidentialité applicable aux applications.
+  </p>
+</header>
 
-    <h1>Applications Alba</h1>
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#applications">Applications</a>
+  <a href="#confidentialite">Confidentialité</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <p>
-        Site officiel des applications Android développées et publiées par Alba.
-    </p>
+<section id="accueil">
+  <h2>Bienvenue</h2>
+  <p>
+    Applications Alba est l’espace officiel dédié aux applications mobiles Android
+    développées et publiées sous le compte développeur Alba.
+  </p>
+  <p>
+    Les applications peuvent proposer différents services selon leur nature :
+    divertissement, outils numériques, musique, jeux, boutique, notifications,
+    ou fonctionnalités interactives.
+  </p>
 
-    <a class="button"
-       href="https://play.google.com/store/apps/dev?id=7275209708675229200"
-       target="_blank">
-       Voir mes applications
-    </a>
+  <a class="button"
+     href="https://play.google.com/store/apps/dev?id=7275209708675229200"
+     target="_blank">
+    Voir mes applications sur Google Play
+  </a>
+</section>
 
-    <div class="links">
-        <a href="privacy-policy.html">Politique de confidentialité</a>
-        |
-        <a href="contact.html">Contact</a>
+<section id="applications">
+  <h2>À propos des applications</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Android</h3>
+      <p>
+        Les applications sont conçues pour fonctionner sur les appareils Android compatibles.
+      </p>
     </div>
 
-</div>
+    <div class="card">
+      <h3>Expérience utilisateur</h3>
+      <p>
+        L’objectif est de proposer des applications simples, lisibles,
+        rapides et faciles à utiliser.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Sécurité</h3>
+      <p>
+        Les services utilisés peuvent inclure des outils Google ou Firebase
+        pour assurer le fonctionnement, la sécurité et l’amélioration des applications.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="confidentialite">
+  <h2>Politique de confidentialité</h2>
+
+  <p>
+    Cette politique de confidentialité s’applique aux applications Android publiées
+    par Alba, sauf si une application possède une politique spécifique indiquée
+    directement dans sa fiche Google Play ou dans l’application.
+  </p>
+
+  <h3>Données collectées</h3>
+  <p>
+    Selon l’application utilisée, certaines données techniques peuvent être collectées,
+    comme le type d’appareil, la version Android, les données de diagnostic,
+    les statistiques d’utilisation, les identifiants publicitaires ou les informations
+    nécessaires au bon fonctionnement de certaines fonctionnalités.
+  </p>
+
+  <h3>Utilisation des données</h3>
+  <p>
+    Les données peuvent être utilisées pour faire fonctionner les applications,
+    améliorer l’expérience utilisateur, corriger les erreurs, mesurer les performances,
+    sécuriser les services, afficher des publicités ou envoyer des notifications
+    lorsque l’utilisateur les accepte.
+  </p>
+
+  <h3>Services tiers</h3>
+  <p>
+    Certaines applications peuvent utiliser des services tiers comme Google Play Services,
+    Firebase, AdMob, Google Analytics for Firebase ou d’autres outils nécessaires
+    au fonctionnement de l’application.
+  </p>
+
+  <h3>Publicités</h3>
+  <p>
+    Certaines applications peuvent afficher des publicités via Google AdMob.
+    Ces publicités peuvent utiliser des données techniques ou publicitaires
+    conformément aux règles de Google.
+  </p>
+
+  <h3>Notifications</h3>
+  <p>
+    Certaines applications peuvent proposer des notifications push.
+    L’utilisateur peut les accepter, les refuser ou les désactiver depuis
+    les paramètres de son appareil.
+  </p>
+
+  <h3>Sécurité</h3>
+  <p>
+    Des mesures raisonnables sont mises en place pour protéger les données
+    et limiter les accès non autorisés.
+  </p>
+
+  <h3>Droits de l’utilisateur</h3>
+  <p>
+    L’utilisateur peut demander des informations concernant ses données,
+    leur suppression ou toute question liée à la confidentialité en contactant
+    le développeur.
+  </p>
+
+  <h3>Contact</h3>
+  <p>
+    Pour toute demande liée aux applications ou à la confidentialité :
+    <strong>contact.alba.play@gmail.com</strong>
+  </p>
+
+  <h3>Mise à jour</h3>
+  <p>
+    Dernière mise à jour : 20 mai 2026.
+  </p>
+</section>
+
+<section id="contact">
+  <h2>Contact officiel</h2>
+  <p>
+    Pour toute question concernant les applications Android Alba,
+    vous pouvez envoyer un message à :
+  </p>
+  <p>
+    <strong>contact.alba.play@gmail.com</strong>
+  </p>
+</section>
 
 <footer>
-    © 2026 Applications Alba — Tous droits réservés.
+  © 2026 Applications Alba — Tous droits réservés.
 </footer>
 
 </body>

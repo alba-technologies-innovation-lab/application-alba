@@ -8,261 +8,128 @@
 
   <meta
     name="description"
-    content="NOXA+ est une application musicale moderne disponible sur Google Play. Découvre des artistes, des contenus exclusifs et crée ton propre profil créateur."
+    content="NOXA+ est une application musicale moderne disponible sur Google Play avec musique, abonnements, publicités, notifications, tirage roue gratuit et espace créateur."
   />
 
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
-
-    html{
-      scroll-behavior:smooth;
-    }
-
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
     body{
-      font-family:Arial, sans-serif;
+      font-family:Arial,sans-serif;
       background:radial-gradient(circle at top,#1d1d40 0%,#09090f 60%);
       color:white;
       line-height:1.7;
     }
-
-    a{
-      text-decoration:none;
-      color:inherit;
-    }
-
+    a{text-decoration:none;color:inherit}
     header{
-      position:sticky;
-      top:0;
-      z-index:100;
+      position:sticky;top:0;z-index:100;
       backdrop-filter:blur(12px);
-      background:rgba(8,8,15,0.82);
-      border-bottom:1px solid rgba(255,255,255,0.08);
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
+      background:rgba(8,8,15,.82);
+      border-bottom:1px solid rgba(255,255,255,.08);
+      display:flex;justify-content:space-between;align-items:center;
       padding:22px 8%;
     }
-
     .logo{
-      font-size:32px;
-      font-weight:bold;
-      letter-spacing:1px;
-      color:#7df9ff;
-      text-shadow:0 0 18px rgba(125,249,255,0.45);
+      font-size:32px;font-weight:bold;letter-spacing:1px;
+      color:#7df9ff;text-shadow:0 0 18px rgba(125,249,255,.45);
     }
-
     .play-btn{
-      padding:14px 24px;
-      border-radius:999px;
-      font-weight:bold;
+      padding:14px 24px;border-radius:999px;font-weight:bold;
       background:linear-gradient(135deg,#00cfff,#8f5cff);
-      box-shadow:0 0 30px rgba(0,207,255,0.28);
-      transition:0.25s;
+      box-shadow:0 0 30px rgba(0,207,255,.28);
+      transition:.25s;
     }
-
-    .play-btn:hover{
-      transform:translateY(-2px) scale(1.02);
-    }
-
-    .hero{
-      text-align:center;
-      padding:110px 8% 80px;
-    }
-
+    .play-btn:hover{transform:translateY(-2px) scale(1.02)}
+    .hero{text-align:center;padding:110px 8% 80px}
     .badge{
-      display:inline-block;
-      padding:10px 18px;
-      border-radius:999px;
-      background:rgba(125,249,255,0.12);
-      border:1px solid rgba(125,249,255,0.3);
-      color:#7df9ff;
-      font-weight:bold;
-      margin-bottom:24px;
+      display:inline-block;padding:10px 18px;border-radius:999px;
+      background:rgba(125,249,255,.12);
+      border:1px solid rgba(125,249,255,.3);
+      color:#7df9ff;font-weight:bold;margin-bottom:24px;
     }
-
-    h1{
-      font-size:clamp(42px,8vw,78px);
-      line-height:1.05;
-      margin-bottom:28px;
-    }
-
+    h1{font-size:clamp(42px,8vw,78px);line-height:1.05;margin-bottom:28px}
     .gradient{
-      background:linear-gradient(135deg,#7df9ff,#a96cff,#ffffff);
-      -webkit-background-clip:text;
-      color:transparent;
+      background:linear-gradient(135deg,#7df9ff,#a96cff,#fff);
+      -webkit-background-clip:text;color:transparent;
     }
-
-    .hero p{
-      max-width:850px;
-      margin:auto;
-      color:#d9d9ea;
-      font-size:20px;
-    }
-
-    .hero-buttons{
-      margin-top:40px;
-      display:flex;
-      justify-content:center;
-      gap:16px;
-      flex-wrap:wrap;
-    }
-
+    .hero p{max-width:850px;margin:auto;color:#d9d9ea;font-size:20px}
+    .hero-buttons{margin-top:40px;display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
     .secondary-btn{
-      padding:14px 24px;
-      border-radius:999px;
-      border:1px solid rgba(255,255,255,0.18);
-      background:rgba(255,255,255,0.05);
+      padding:14px 24px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.18);
+      background:rgba(255,255,255,.05);
     }
-
-    section{
-      padding:70px 8%;
-    }
-
-    h2{
-      text-align:center;
-      margin-bottom:35px;
-      font-size:42px;
-    }
-
-    .grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:24px;
-    }
-
+    section{padding:70px 8%}
+    h2{text-align:center;margin-bottom:35px;font-size:42px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
     .card{
-      background:rgba(255,255,255,0.06);
-      border:1px solid rgba(255,255,255,0.12);
-      border-radius:26px;
-      padding:28px;
-      box-shadow:0 18px 50px rgba(0,0,0,0.28);
-      transition:0.25s;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:26px;padding:28px;
+      box-shadow:0 18px 50px rgba(0,0,0,.28);
+      transition:.25s;
     }
-
-    .card:hover{
-      transform:translateY(-4px);
+    .card:hover{transform:translateY(-4px)}
+    .card h3{color:#7df9ff;font-size:24px;margin-bottom:12px}
+    .price{font-size:36px;font-weight:bold;margin-bottom:18px}
+    .card p,.card li{color:#d7d7e6}
+    .card ul{padding-left:22px;margin-top:16px;margin-bottom:16px}
+    .card li{margin-bottom:8px}
+    .free-pack{border-color:rgba(120,255,160,.45);box-shadow:0 0 40px rgba(120,255,160,.14)}
+    .creator{border-color:rgba(165,108,255,.4);box-shadow:0 0 40px rgba(165,108,255,.14)}
+    .main-pack{border-color:rgba(0,212,255,.7);box-shadow:0 0 42px rgba(0,212,255,.22)}
+    .ultimate-pack{border-color:rgba(255,215,0,.5);box-shadow:0 0 42px rgba(255,215,0,.15)}
+    .info-box{
+      margin-top:30px;padding:30px;border-radius:28px;
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.12);
     }
-
-    .card h3{
-      color:#7df9ff;
-      font-size:24px;
-      margin-bottom:12px;
-    }
-
-    .price{
-      font-size:38px;
-      font-weight:bold;
-      margin-bottom:18px;
-    }
-
-    .card p{
-      color:#d7d7e6;
-    }
-
-    .card ul{
-      padding-left:22px;
-      margin-top:16px;
-      margin-bottom:16px;
-      color:#d7d7e6;
-    }
-
-    .card li{
-      margin-bottom:8px;
-    }
-
-    .creator{
-      border-color:rgba(165,108,255,0.4);
-      box-shadow:0 0 40px rgba(165,108,255,0.14);
-    }
-
-    .main-pack{
-      border-color:rgba(0,212,255,0.7);
-      box-shadow:0 0 42px rgba(0,212,255,0.22);
-    }
-
-    .ultimate-pack{
-      border-color:rgba(255,215,0,0.5);
-      box-shadow:0 0 42px rgba(255,215,0,0.15);
-    }
-
-    .notice{
+    .info-box h3{color:#7df9ff;font-size:28px;margin-bottom:14px}
+    .info-box p,.info-box li{color:#d7d7e6}
+    .info-box ul{padding-left:24px;margin-top:14px}
+    .wheel-card{
       margin-top:30px;
-      padding:22px;
-      border-radius:22px;
-      background:rgba(255,193,7,0.1);
-      border:1px solid rgba(255,193,7,0.28);
+      background:linear-gradient(135deg,rgba(0,207,255,.12),rgba(255,215,0,.10));
+      border:1px solid rgba(255,215,0,.35);
+      border-radius:30px;padding:34px;
+      box-shadow:0 0 45px rgba(255,215,0,.12);
+    }
+    .wheel-card h3{color:#ffd86b;font-size:30px;margin-bottom:14px}
+    .wheel-card p,.wheel-card li{color:#f2f2ff}
+    .wheel-card ul{padding-left:24px;margin-top:16px}
+    .notice{
+      margin-top:30px;padding:22px;border-radius:22px;
+      background:rgba(255,193,7,.1);
+      border:1px solid rgba(255,193,7,.28);
       color:#ffe49d;
     }
-
     .danger{
-      margin-top:30px;
-      padding:28px;
-      border-radius:26px;
-      background:rgba(255,60,60,0.08);
-      border:1px solid rgba(255,80,80,0.35);
+      margin-top:30px;padding:28px;border-radius:26px;
+      background:rgba(255,60,60,.08);
+      border:1px solid rgba(255,80,80,.35);
       color:#ffd1d1;
     }
-
-    .danger h3{
-      color:#ff8585;
-      margin-bottom:14px;
-      font-size:26px;
-    }
-
-    .danger ul{
-      padding-left:24px;
-      margin-top:14px;
-    }
-
-    .danger li{
-      margin-bottom:8px;
-    }
-
+    .danger h3{color:#ff8585;margin-bottom:14px;font-size:26px}
+    .danger ul{padding-left:24px;margin-top:14px}
+    .danger li{margin-bottom:8px}
     .legal{
-      max-width:1100px;
-      margin:auto;
-      background:rgba(255,255,255,0.05);
-      border:1px solid rgba(255,255,255,0.12);
-      border-radius:30px;
-      padding:35px;
+      max-width:1100px;margin:auto;
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:30px;padding:35px;
     }
-
-    .legal h3{
-      color:#7df9ff;
-      margin-top:24px;
-      margin-bottom:10px;
-    }
-
-    .legal p,
-    .legal li{
-      color:#d7d7e6;
-    }
-
-    .legal ul{
-      padding-left:24px;
-    }
-
+    .legal h3{color:#7df9ff;margin-top:24px;margin-bottom:10px}
+    .legal p,.legal li{color:#d7d7e6}
+    .legal ul{padding-left:24px}
     footer{
-      padding:40px 8%;
-      text-align:center;
-      border-top:1px solid rgba(255,255,255,0.08);
-      background:#07070d;
-      color:#bdbdd0;
+      padding:40px 8%;text-align:center;
+      border-top:1px solid rgba(255,255,255,.08);
+      background:#07070d;color:#bdbdd0;
     }
-
     @media(max-width:700px){
-      header{
-        flex-direction:column;
-        gap:16px;
-      }
-
-      .hero{
-        padding-top:70px;
-      }
+      header{flex-direction:column;gap:16px}
+      .hero{padding-top:70px}
+      h2{font-size:34px}
     }
   </style>
 </head>
@@ -271,312 +138,356 @@
 
 <header>
   <div class="logo">NOXA+</div>
-
-  <a
-    class="play-btn"
-    href="https://play.google.com/store/apps/details?id=com.noxa.plus"
-    target="_blank"
-  >
+  <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.noxa.plus" target="_blank">
     Télécharger sur Google Play
   </a>
 </header>
 
 <main>
 
-  <section class="hero">
-    <div class="badge">Application musicale officielle</div>
+<section class="hero">
+  <div class="badge">Application musicale officielle</div>
 
-    <h1>
-      <span class="gradient">NOXA+</span><br>
-      Ta musique. Ton univers.
-    </h1>
+  <h1><span class="gradient">NOXA+</span><br>Ta musique. Ton univers.</h1>
 
+  <p>
+    NOXA+ est une plateforme musicale moderne disponible sur Google Play.
+    Elle permet d’écouter des musiques, de découvrir des artistes, de recevoir des notifications,
+    de participer au tirage roue gratuit et de créer un espace créateur.
+  </p>
+
+  <div class="hero-buttons">
+    <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.noxa.plus" target="_blank">
+      Ouvrir NOXA+
+    </a>
+    <a class="secondary-btn" href="#confidentialite">Politique de confidentialité</a>
+  </div>
+</section>
+
+<section>
+  <h2>Pourquoi NOXA+ ?</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🎵 Musiques</h3>
+      <p>Découvre des contenus musicaux, des artistes indépendants et des univers uniques.</p>
+    </div>
+
+    <div class="card">
+      <h3>🔥 Créateurs</h3>
+      <p>Les artistes peuvent publier leurs créations et construire leur communauté.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎡 Tirage roue gratuit</h3>
+      <p>Les utilisateurs peuvent participer gratuitement à une roue de tirage dans l’application.</p>
+    </div>
+
+    <div class="card">
+      <h3>🔔 Notifications</h3>
+      <p>NOXA+ peut envoyer des notifications pour les nouveautés, annonces, mises à jour ou informations importantes.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>🌌 Abonnements NOXA+</h2>
+
+  <div class="grid">
+    <div class="card free-pack">
+      <h3>🆓 NOXA+ Gratuit</h3>
+      <div class="price">Gratuit</div>
+      <p>Pour découvrir NOXA+ librement avec publicités.</p>
+      <ul>
+        <li>Écoute des musiques publiques</li>
+        <li>Publicités intégrées</li>
+        <li>Accès au tirage roue gratuit</li>
+        <li>Notifications possibles avec autorisation</li>
+        <li>Accès limité à certaines fonctions</li>
+        <li>Pas d’upload créateur</li>
+        <li>Pas de profil artiste</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>🟢 NOXA+ Découverte</h3>
+      <div class="price">0,99 € / mois</div>
+      <p>Pour écouter l’univers NOXA+ sans publicités.</p>
+      <ul>
+        <li>Écoute des musiques publiques</li>
+        <li>Suppression des publicités</li>
+        <li>Accès simple à l’application</li>
+        <li>Accès au tirage roue gratuit</li>
+        <li>Pas de profil créateur</li>
+      </ul>
+    </div>
+
+    <div class="card creator">
+      <h3>🎵 NOXA+ Créateur START</h3>
+      <div class="price">3,99 € / mois</div>
+      <p>Pour les petits créateurs qui veulent tester.</p>
+      <ul>
+        <li>Création d’un profil artiste</li>
+        <li>Upload jusqu’à 5 musiques par mois</li>
+        <li>Photo de profil artiste</li>
+        <li>Page publique simple</li>
+        <li>Musiques visibles dans l’application</li>
+        <li>Accès au tirage roue gratuit</li>
+      </ul>
+    </div>
+
+    <div class="card creator main-pack">
+      <h3>🔥 NOXA+ Créateur PLUS</h3>
+      <div class="price">9,99 € / mois</div>
+      <p>Pour les artistes actifs.</p>
+      <ul>
+        <li>Tout le pack START</li>
+        <li>Upload jusqu’à 25 musiques par mois</li>
+        <li>Profil artiste amélioré</li>
+        <li>Mise en avant possible</li>
+        <li>Accès aux futures fonctions créateur</li>
+        <li>Accès au tirage roue gratuit</li>
+      </ul>
+    </div>
+
+    <div class="card creator ultimate-pack">
+      <h3>👑 NOXA+ Créateur ULTIME</h3>
+      <div class="price">19,99 € / mois</div>
+      <p>Pour les créateurs très actifs et labels indépendants.</p>
+      <ul>
+        <li>Upload jusqu’à 100 musiques par mois</li>
+        <li>Badge vérifié</li>
+        <li>Priorité d’affichage</li>
+        <li>Profil artiste premium</li>
+        <li>Accès anticipé aux nouveautés</li>
+        <li>Futures options marketing NOXA+</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wheel-card">
+    <h3>🎡 Tirage roue gratuit NOXA+</h3>
     <p>
-      NOXA+ est une plateforme musicale moderne permettant de découvrir des artistes,
-      écouter des contenus exclusifs et créer son propre espace créateur directement
-      dans l’application.
+      NOXA+ propose un système de roue de tirage gratuit accessible depuis l’application.
+      Le tirage est un bonus communautaire et ne garantit pas un gain automatique.
+    </p>
+    <ul>
+      <li>Participation gratuite depuis l’application.</li>
+      <li>Participation limitée selon les règles affichées dans l’application.</li>
+      <li>Les lots, avantages ou récompenses peuvent changer selon les périodes.</li>
+      <li>Les participations frauduleuses ou automatisées peuvent être annulées.</li>
+      <li>NOXA+ peut modifier, suspendre ou arrêter le tirage en cas d’abus, bug ou maintenance.</li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <h3>🔔 Permissions et notifications</h3>
+    <p>
+      NOXA+ peut demander l’autorisation d’envoyer des notifications.
+      Ces notifications peuvent concerner les nouveautés musicales, les annonces importantes,
+      les rappels liés à l’application, les résultats ou informations liées au tirage roue,
+      les messages de sécurité ou les mises à jour.
+    </p>
+    <ul>
+      <li>L’utilisateur peut accepter ou refuser les notifications.</li>
+      <li>Le refus des notifications n’empêche pas l’utilisation principale de l’application.</li>
+      <li>Les notifications peuvent être désactivées à tout moment dans les paramètres du téléphone.</li>
+      <li>NOXA+ peut utiliser Firebase Cloud Messaging pour envoyer les notifications.</li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <h3>📱 Google Play, achats et abonnements</h3>
+    <p>
+      Les abonnements et achats intégrés de NOXA+ sont gérés via Google Play Billing.
+      Les paiements, renouvellements, annulations et remboursements dépendent des règles
+      et paramètres du compte Google Play de l’utilisateur.
+    </p>
+    <ul>
+      <li>Les abonnements peuvent être renouvelés automatiquement par Google Play.</li>
+      <li>L’utilisateur peut gérer ou annuler son abonnement depuis Google Play.</li>
+      <li>NOXA+ ne stocke pas directement les informations bancaires.</li>
+      <li>Les prix et avantages peuvent évoluer selon les mises à jour de l’application.</li>
+    </ul>
+  </div>
+
+  <div class="info-box">
+    <h3>📂 Upload, stockage et fichiers créateurs</h3>
+    <p>
+      Les créateurs peuvent publier des contenus selon leur abonnement.
+      Les fichiers envoyés peuvent inclure musiques, images, pochettes, textes,
+      informations de profil ou autres éléments nécessaires à la publication.
+    </p>
+    <ul>
+      <li>Les fichiers doivent respecter les règles de NOXA+.</li>
+      <li>Les contenus interdits, copiés ou signalés peuvent être supprimés.</li>
+      <li>NOXA+ peut utiliser Firebase Storage ou d’autres services techniques pour stocker les fichiers.</li>
+      <li>Les limites d’upload dépendent du pack créateur choisi.</li>
+    </ul>
+  </div>
+
+  <div class="notice">
+    Avant toute publication, l’utilisateur doit confirmer posséder les droits nécessaires
+    sur la musique, l’image, le texte, la pochette, la voix et les fichiers audio publiés.
+  </div>
+
+  <div class="danger">
+    <h3>🛡️ Protection des droits d’auteur</h3>
+    <p>
+      NOXA+ respecte les droits des artistes, producteurs, auteurs, compositeurs et créateurs.
+      Toute musique, image, pochette, voix, texte ou contenu publié doit appartenir à l’utilisateur
+      ou être utilisé avec les autorisations nécessaires.
+    </p>
+    <ul>
+      <li>Interdiction de recopier une musique existante.</li>
+      <li>Interdiction d’imiter volontairement un artiste dans le but de tromper le public.</li>
+      <li>Interdiction de publier une musique, image, voix ou pochette sans autorisation.</li>
+      <li>Interdiction d’utiliser l’identité, le nom, l’image ou l’univers d’un artiste sans accord légal.</li>
+    </ul>
+    <p>
+      Le support NOXA+ se réserve le droit de supprimer immédiatement tout contenu suspect,
+      signalé ou non conforme. En cas d’abus, le compte utilisateur ou le profil créateur
+      peut être limité, suspendu ou supprimé définitivement.
+    </p>
+    <p><strong>NOXA+ soutient la créativité originale, pas le vol artistique.</strong></p>
+  </div>
+</section>
+
+<section>
+  <h2>Conformité Google Play</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>🔒 Données</h3>
+      <p>NOXA+ limite la collecte aux données utiles au fonctionnement, à la sécurité et à la modération.</p>
+    </div>
+
+    <div class="card">
+      <h3>🔔 Notifications</h3>
+      <p>Les notifications sont envoyées uniquement si l’autorisation est accordée par l’utilisateur.</p>
+    </div>
+
+    <div class="card">
+      <h3>💳 Play Billing</h3>
+      <p>Les abonnements sont gérés par Google Play Billing, sans stockage direct des données bancaires.</p>
+    </div>
+
+    <div class="card">
+      <h3>📩 Contact</h3>
+      <p>contact.alba.play@gmail.com</p>
+    </div>
+  </div>
+</section>
+
+<section id="confidentialite">
+  <h2>Politique de confidentialité</h2>
+
+  <div class="legal">
+    <p>
+      Cette politique explique comment NOXA+ peut collecter, utiliser et protéger
+      certaines données nécessaires au fonctionnement de l’application.
     </p>
 
-    <div class="hero-buttons">
-      <a
-        class="play-btn"
-        href="https://play.google.com/store/apps/details?id=com.noxa.plus"
-        target="_blank"
-      >
-        Ouvrir NOXA+
-      </a>
+    <h3>1. Données collectées</h3>
+    <p>
+      NOXA+ peut collecter des informations liées au compte utilisateur, au profil créateur,
+      aux abonnements Google Play, aux contenus publiés, aux participations au tirage roue,
+      aux notifications et à la sécurité de l’application.
+    </p>
 
-      <a class="secondary-btn" href="#confidentialite">
-        Politique de confidentialité
-      </a>
-    </div>
-  </section>
+    <h3>2. Utilisation des données</h3>
+    <ul>
+      <li>Gestion des comptes utilisateurs</li>
+      <li>Gestion des abonnements et achats via Google Play</li>
+      <li>Publication et modération des contenus créateurs</li>
+      <li>Gestion des profils artistes</li>
+      <li>Gestion du tirage roue gratuit</li>
+      <li>Prévention des abus, fraudes et comportements automatisés</li>
+      <li>Envoi de notifications si l’utilisateur l’autorise</li>
+      <li>Amélioration de la stabilité et de la sécurité</li>
+    </ul>
 
-  <section>
-    <h2>Pourquoi NOXA+ ?</h2>
+    <h3>3. Services utilisés</h3>
+    <p>
+      NOXA+ peut utiliser Firebase, Firebase Authentication, Firebase Storage,
+      Firebase Cloud Messaging, Google Play Services, Google Play Billing
+      et des services publicitaires pour la version gratuite avec publicités.
+    </p>
 
-    <div class="grid">
-      <div class="card">
-        <h3>🎵 Musiques</h3>
-        <p>
-          Découvre des contenus exclusifs, artistes indépendants
-          et univers musicaux uniques.
-        </p>
-      </div>
+    <h3>4. Publicités</h3>
+    <p>
+      La version gratuite peut afficher des publicités afin de permettre un accès sans paiement.
+      Certaines annonces peuvent utiliser des identifiants publicitaires selon les paramètres
+      du téléphone et les règles Google Play.
+    </p>
 
-      <div class="card">
-        <h3>🔥 Créateurs</h3>
-        <p>
-          Les artistes peuvent publier leurs créations et construire
-          leur propre communauté.
-        </p>
-      </div>
+    <h3>5. Notifications</h3>
+    <p>
+      NOXA+ peut demander l’autorisation d’envoyer des notifications.
+      L’utilisateur peut refuser cette permission ou la désactiver depuis les paramètres Android.
+      Les notifications peuvent concerner les nouveautés, annonces, mises à jour, sécurité,
+      tirage roue gratuit ou informations importantes liées à l’application.
+    </p>
 
-      <div class="card">
-        <h3>🌌 Profils artistes</h3>
-        <p>
-          Chaque créateur dispose d’un espace dédié avec ses musiques,
-          son identité visuelle et sa page publique.
-        </p>
-      </div>
+    <h3>6. Google Play Billing</h3>
+    <p>
+      Les abonnements et achats intégrés sont traités par Google Play.
+      NOXA+ ne stocke pas directement les informations bancaires.
+      La gestion, l’annulation ou le renouvellement des abonnements se fait depuis Google Play.
+    </p>
 
-      <div class="card">
-        <h3>📱 Google Play</h3>
-        <p>
-          Application officielle disponible uniquement sur Google Play.
-        </p>
-      </div>
-    </div>
-  </section>
+    <h3>7. Uploads et fichiers</h3>
+    <p>
+      Les créateurs peuvent envoyer des fichiers audio, images, pochettes, textes ou informations
+      nécessaires à leur profil. Ces fichiers peuvent être stockés via des services techniques sécurisés.
+      Les contenus non conformes peuvent être supprimés.
+    </p>
 
-  <section>
-    <h2>🌌 Abonnements NOXA+</h2>
+    <h3>8. Tirage roue gratuit</h3>
+    <p>
+      Le tirage roue gratuit est une fonctionnalité bonus. Les règles, limites de participation,
+      gains éventuels et conditions sont affichés dans l’application. NOXA+ peut modifier,
+      suspendre ou arrêter cette fonctionnalité en cas de bug, abus, maintenance ou nécessité de sécurité.
+    </p>
 
-    <div class="grid">
+    <h3>9. Droits d’auteur et modération</h3>
+    <p>
+      NOXA+ peut supprimer tout contenu qui semble violer des droits d’auteur, copier un artiste,
+      reprendre une œuvre protégée ou tromper les utilisateurs. En cas de violation répétée ou grave,
+      le compte peut être suspendu ou supprimé.
+    </p>
 
-      <div class="card">
-        <h3>🟢 NOXA+ Découverte</h3>
-        <div class="price">0,99 € / mois</div>
+    <h3>10. Responsabilité des utilisateurs</h3>
+    <p>
+      Chaque utilisateur est responsable des musiques, images, textes, pochettes, voix et fichiers audio
+      qu’il publie. NOXA+ ne revendique pas la propriété des contenus publiés par les créateurs.
+    </p>
 
-        <p>Pour écouter et découvrir l’univers NOXA+.</p>
+    <h3>11. Mineurs</h3>
+    <p>
+      Les utilisateurs mineurs doivent utiliser l’application sous surveillance parentale lorsque cela est nécessaire.
+      Les contenus publiés doivent rester adaptés et respecter les règles applicables.
+    </p>
 
-        <ul>
-          <li>Accès aux contenus disponibles</li>
-          <li>Écoute des musiques publiques</li>
-          <li>Accès simple à l’application</li>
-          <li>Pas de profil créateur</li>
-        </ul>
-      </div>
+    <h3>12. Sécurité</h3>
+    <p>
+      Des mesures raisonnables sont mises en place pour protéger les données utilisateurs.
+      Cependant, aucune méthode de transmission ou de stockage numérique ne peut garantir une sécurité absolue.
+    </p>
 
-      <div class="card creator">
-        <h3>🎵 NOXA+ Créateur START</h3>
-        <div class="price">3,99 € / mois</div>
+    <h3>13. Suppression des données</h3>
+    <p>
+      Toute demande liée aux données personnelles peut être envoyée à :
+      contact.alba.play@gmail.com
+    </p>
 
-        <p>Pour les petits créateurs qui veulent tester.</p>
-
-        <ul>
-          <li>Création d’un profil artiste</li>
-          <li>Upload jusqu’à 5 musiques par mois</li>
-          <li>Photo de profil artiste</li>
-          <li>Page publique simple</li>
-          <li>Musiques visibles dans l’application</li>
-        </ul>
-
-        <p><strong>Bon pack entrée de gamme.</strong></p>
-      </div>
-
-      <div class="card creator main-pack">
-        <h3>🔥 NOXA+ Créateur PLUS</h3>
-        <div class="price">9,99 € / mois</div>
-
-        <p>Pour les artistes actifs.</p>
-
-        <ul>
-          <li>Tout le pack START</li>
-          <li>Upload jusqu’à 25 musiques par mois</li>
-          <li>Profil artiste amélioré</li>
-          <li>Mise en avant possible dans l’application</li>
-          <li>Accès aux futures fonctions créateur</li>
-        </ul>
-
-        <p><strong>Pack principal recommandé.</strong></p>
-      </div>
-
-      <div class="card creator ultimate-pack">
-        <h3>👑 NOXA+ Créateur ULTIME</h3>
-        <div class="price">19,99 € / mois</div>
-
-        <p>Pour les gros créateurs, artistes très actifs et labels indépendants.</p>
-
-        <ul>
-          <li>Upload jusqu’à 100 musiques par mois</li>
-          <li>Badge vérifié</li>
-          <li>Priorité d’affichage</li>
-          <li>Profil artiste premium</li>
-          <li>Accès anticipé aux nouveautés</li>
-          <li>Futures options marketing NOXA+</li>
-        </ul>
-
-        <p><strong>Pack pro pour se démarquer.</strong></p>
-      </div>
-
-    </div>
-
-    <div class="notice">
-      Avant toute publication, l’utilisateur doit confirmer posséder les droits nécessaires
-      sur la musique, l’image, le texte, la pochette et les fichiers audio publiés.
-    </div>
-
-    <div class="danger">
-      <h3>🛡️ Protection des droits d’auteur</h3>
-
-      <p>
-        NOXA+ respecte les droits des artistes, producteurs, auteurs, compositeurs
-        et créateurs. Toute musique, image, pochette, voix, texte ou contenu publié
-        doit appartenir à l’utilisateur ou être utilisé avec les autorisations nécessaires.
-      </p>
-
-      <ul>
-        <li>Il est interdit de recopier une musique existante.</li>
-        <li>Il est interdit d’imiter volontairement un artiste dans le but de tromper le public.</li>
-        <li>Il est interdit de publier une musique, une image, une voix ou une pochette sans autorisation.</li>
-        <li>Il est interdit d’utiliser l’identité, le nom, l’image ou l’univers d’un artiste sans accord légal.</li>
-      </ul>
-
-      <p>
-        Le support NOXA+ se réserve le droit de supprimer immédiatement tout contenu
-        suspect, signalé ou non conforme. En cas d’abus, le compte utilisateur ou le profil
-        créateur peut être limité, suspendu ou supprimé définitivement.
-      </p>
-
-      <p>
-        L’utilisateur reste entièrement responsable des contenus qu’il publie.
-        En cas de violation des droits d’auteur, des conséquences peuvent s’appliquer,
-        y compris la suppression des contenus, la perte d’accès aux fonctions créateur
-        et d’éventuelles démarches légales selon la gravité de la situation.
-      </p>
-
-      <p>
-        <strong>NOXA+ soutient la créativité originale, pas le vol artistique.</strong>
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Conformité Google Play</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>🔒 Sécurité des données</h3>
-        <p>
-          NOXA+ limite la collecte aux données nécessaires au fonctionnement
-          de l’application.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>📄 Contenus utilisateurs</h3>
-        <p>
-          Chaque créateur reste responsable des contenus publiés sur son profil.
-          Les contenus non conformes peuvent être supprimés.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🛡️ Protection des mineurs</h3>
-        <p>
-          Les contenus doivent respecter les règles de sécurité,
-          les lois applicables et les conditions Google Play.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>📩 Contact développeur</h3>
-        <p>contact.alba.play@gmail.com</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="confidentialite">
-    <h2>Politique de confidentialité</h2>
-
-    <div class="legal">
-      <p>
-        Cette politique explique comment NOXA+ peut collecter, utiliser et protéger
-        certaines données nécessaires au fonctionnement de l’application.
-      </p>
-
-      <h3>1. Données collectées</h3>
-      <p>
-        L’application peut collecter certaines informations nécessaires au fonctionnement
-        des comptes, profils artistes, abonnements Google Play et contenus publiés.
-      </p>
-
-      <h3>2. Utilisation des données</h3>
-      <ul>
-        <li>Gestion des comptes utilisateurs</li>
-        <li>Gestion des abonnements</li>
-        <li>Publication des contenus créateurs</li>
-        <li>Gestion des profils artistes</li>
-        <li>Amélioration de la stabilité</li>
-        <li>Sécurité de la plateforme</li>
-        <li>Modération des contenus publiés</li>
-      </ul>
-
-      <h3>3. Services utilisés</h3>
-      <p>
-        NOXA+ peut utiliser des services techniques comme Firebase,
-        Google Play Services et Google Play Billing.
-      </p>
-
-      <h3>4. Contenus créateurs</h3>
-      <p>
-        Les utilisateurs doivent posséder les droits nécessaires sur les contenus publiés.
-        Tout contenu illégal, copié, signalé ou non conforme peut être supprimé
-        par le support NOXA+.
-      </p>
-
-      <h3>5. Droits d’auteur et modération</h3>
-      <p>
-        NOXA+ peut supprimer tout contenu qui semble violer des droits d’auteur,
-        copier un artiste, reprendre une œuvre protégée ou tromper les utilisateurs.
-        En cas de violation répétée ou grave, le compte peut être suspendu ou supprimé.
-      </p>
-
-      <h3>6. Responsabilité des utilisateurs</h3>
-      <p>
-        Chaque utilisateur est responsable des musiques, images, textes, pochettes,
-        voix et fichiers audio qu’il publie. NOXA+ ne revendique pas la propriété
-        des contenus publiés par les créateurs.
-      </p>
-
-      <h3>7. Sécurité</h3>
-      <p>
-        Des mesures raisonnables sont mises en place pour protéger les données utilisateurs.
-        Cependant, aucune méthode de transmission ou de stockage numérique
-        ne peut garantir une sécurité absolue.
-      </p>
-
-      <h3>8. Mineurs</h3>
-      <p>
-        Les utilisateurs mineurs doivent utiliser l’application sous surveillance parentale
-        lorsque cela est nécessaire. Les contenus publiés doivent rester adaptés
-        et respecter les règles applicables.
-      </p>
-
-      <h3>9. Suppression des données</h3>
-      <p>
-        Toute demande liée aux données personnelles peut être envoyée à :
-        contact.alba.play@gmail.com
-      </p>
-
-      <h3>10. Mise à jour</h3>
-      <p>
-        Cette politique peut évoluer selon les mises à jour de NOXA+,
-        les obligations légales ou les règles Google Play.
-      </p>
-    </div>
-  </section>
+    <h3>14. Mise à jour</h3>
+    <p>
+      Cette politique peut évoluer selon les mises à jour de NOXA+, les obligations légales
+      ou les règles Google Play.
+    </p>
+  </div>
+</section>
 
 </main>
 

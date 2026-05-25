@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S. Alba - Site officiel</title>
+  <meta name="description" content="Site officiel de S. Alba, artiste indépendant. Bio, applications, espace fans, tirage surprise et politique de confidentialité." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0b0f;
+      color: #f5f5f5;
+      line-height: 1.7;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #050505, #161622, #2b1b3d);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ddd;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 22px;
+      border-radius: 30px;
+      background: #ffffff;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn.secondary {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      background: #111;
+      padding: 12px;
+      text-align: center;
+      z-index: 10;
+      border-bottom: 1px solid #333;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 8px 12px;
+      font-size: 0.95rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px;
+      border-bottom: 1px solid #252525;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+      color: #ffffff;
+    }
+
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      color: #e6d9ff;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #e7e7e7;
+    }
+
+    .quote {
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #ffffff;
+      border-left: 4px solid #b58cff;
+      padding-left: 18px;
+      margin: 30px 0;
+    }
+
+    .card {
+      background: #15151d;
+      padding: 25px;
+      border-radius: 18px;
+      margin: 20px 0;
+      border: 1px solid #2e2e3a;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #050505;
+      color: #aaa;
+    }
+
+    .small {
+      font-size: 0.9rem;
+      color: #bbb;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <h1>S. Alba</h1>
+    <p>Auteur-compositeur indépendant — l’écriture comme une lumière dans la nuit.</p>
+    <a href="#bio" class="btn">Découvrir la bio</a>
+    <a href="#applications" class="btn secondary">Applications</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#bio">Bio</a>
+  <a href="#musique">Musique</a>
+  <a href="#applications">Applications</a>
+  <a href="#fans">Fans</a>
+  <a href="#tirage">Tirage surprise</a>
+  <a href="#confidentialite">Confidentialité</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="bio">
+  <h2>Biographie officielle</h2>
+
+  <p>Je m'appelle <strong>Sébastien Thomas</strong>, alias <strong>S. Alba</strong>.</p>
+
+  <p>Je viens d’une famille simple, une famille modeste où l’on apprend surtout à travailler, à rester humble et à avancer malgré les obstacles.</p>
+
+  <p>Mon père, Jean-Marc, est musicien. La musique a toujours été présente autour de moi. Pas comme un rêve de célébrité ou de projecteurs, mais comme quelque chose de naturel, qui fait simplement partie de la vie.</p>
+
+  <div class="quote">« Les textes sont devenus ma façon de parler. »</div>
+
+  <h3>L’écriture comme refuge</h3>
+
+  <p>Depuis toujours, j’écris pour m’exprimer.</p>
+
+  <p>Parler n’a jamais été facile pour moi. Les mots restent souvent bloqués quand ils doivent sortir à voix haute.</p>
+
+  <p>Alors j’ai trouvé une autre manière de dire les choses : l’écriture.</p>
+
+  <p>Comme beaucoup de gens, j’ai toujours travaillé dans ma vie. Des métiers parfois durs, physiquement et mentalement.</p>
+
+  <p>La musique, au départ, n’était pas un projet artistique. C’était simplement un endroit où déposer ce que j’avais dans la tête et dans le cœur.</p>
+
+  <p>Au début, j’écrivais surtout pour ma femme. Des essais, des textes, des morceaux, juste pour lui parler autrement, en musique.</p>
+
+  <h3>Pourquoi le nom S. Alba ?</h3>
+
+  <p>J’ai choisi ce nom pour une raison simple : il me représente.</p>
+
+  <p><strong>S</strong> est l’initiale de mon prénom, Sébastien. <strong>Alba</strong> vient du latin <em>albus</em>, qui signifie « blanc », mais évoque aussi l’aube, le moment où la lumière apparaît après la nuit.</p>
+
+  <p>Ce symbole me parle. Même dans l’obscurité, il peut exister une lumière.</p>
+
+  <div class="quote">S. Alba — l’écriture comme une lumière dans la nuit.</div>
+
+  <p>Dans mon projet, tout commence par les mots. Chaque morceau naît d’une idée, d’une émotion ou d’un souvenir.</p>
+
+  <p>J’écris sur la vie quotidienne, les silences, les doutes, les relations humaines, les combats intérieurs… mais j’essaie toujours de laisser une place à l’espoir.</p>
+
+  <p>Puis un jour, quelqu’un m’a dit : « Pourquoi tu ne les publies pas ? »</p>
+
+  <p>Cette simple phrase a ouvert une porte. C’est comme ça que l’aventure S. Alba a commencé.</p>
+
+  <p>Quand je fais quelque chose, j’essaie de le faire sérieusement. Alors j’ai appris petit à petit : améliorer mes textes, construire des morceaux, créer des visuels, monter des vidéos et imaginer un univers autour de mes mots.</p>
+
+  <p>Je sais très bien une chose : je ne suis pas chanteur.</p>
+
+  <p>Mais ce n’est pas le but recherché. Le but, c’est que mes mots vivent, que mes histoires trouvent une voix, et que ceux qui les écoutent y reconnaissent parfois un morceau de leur propre vie.</p>
+
+  <p>C’est une manière de transformer le silence en mots.</p>
+</section>
+
+<section id="musique">
+  <h2>Mon univers musical</h2>
+
+  <p>Je développe mon projet de manière indépendante.</p>
+
+  <p>J’écris les textes, je travaille l’univers musical, les instruments, les voix synthétisées, les pochettes visuelles, les montages vidéo et la création des clips. Je construis aussi tout mon univers numérique.</p>
+
+  <p>Chaque étape fait partie du processus créatif et demande du temps, du travail et de la patience.</p>
+
+  <p>Grâce aux nouvelles technologies et aux outils numériques, je peux créer et partager ma musique tout en gardant une liberté totale dans la façon de raconter mes histoires.</p>
+
+  <p>Je ne cherche pas forcément à suivre les tendances. Je préfère rester fidèle à ce que je ressens.</p>
+
+  <p>Pour moi, il est important de garder un univers authentique, sans filtre.</p>
+
+  <p>La musique reste avant tout un espace d’expression libre.</p>
+
+  <div class="card">
+    <p><strong>S. Alba</strong></p>
+    <p>Auteur-compositeur indépendant</p>
+    <p>Sébastien Thomas</p>
+    <p>Né à Nîmes le 16 décembre 1986</p>
+    <p>Aujourd’hui installé dans le bassin de Thau, à Sète, dans le sud de la France.</p>
+  </div>
+
+  <div class="quote">Chaque histoire continue quelque part. La musique aussi.</div>
+</section>
+
+<section id="applications">
+  <h2>Applications officielles</h2>
+
+  <div class="card">
+    <h3>Application S. Alba / Alba Music</h3>
+    <p>L’application officielle permet de suivre l’univers S. Alba, découvrir les nouveautés, accéder aux contenus, aux espaces fans et aux fonctionnalités liées au projet musical.</p>
+    <p>Elle peut contenir des espaces de discussion, des mini-jeux, des récompenses, des contenus exclusifs et des liens vers les plateformes officielles.</p>
+  </div>
+
+  <div class="card">
+    <h3>Application fans</h3>
+    <p>L’espace fans est pensé comme un lieu simple et respectueux où la communauté peut suivre les actualités, réagir, participer et soutenir le projet.</p>
+    <p>Les utilisateurs peuvent, selon les fonctionnalités disponibles, interagir avec certains contenus, participer à des événements ou recevoir des informations officielles.</p>
+  </div>
+</section>
+
+<section id="fans">
+  <h2>Espace fans</h2>
+
+  <p>L’espace fans permet de créer un lien plus direct autour du projet S. Alba.</p>
+
+  <ul>
+    <li>Découverte des nouveautés musicales</li>
+    <li>Actualités officielles</li>
+    <li>Messages et contenus pour la communauté</li>
+    <li>Événements ou opérations spéciales</li>
+    <li>Récompenses ou surprises selon les fonctionnalités disponibles</li>
+  </ul>
+
+  <p>Le respect reste la base. Aucun propos haineux, violent, insultant ou discriminatoire n’est accepté.</p>
+</section>
+
+<section id="tirage">
+  <h2>Tirage surprise</h2>
+
+  <p>Des tirages surprise peuvent être organisés ponctuellement dans l’univers S. Alba ou via les applications officielles.</p>
+
+  <div class="card">
+    <h3>Principe</h3>
+    <p>Le tirage surprise permet aux participants de tenter de gagner une récompense, un cadeau, un contenu spécial ou tout autre avantage annoncé au moment de l’opération.</p>
+  </div>
+
+  <div class="card">
+    <h3>Participation</h3>
+    <p>La participation peut être soumise à certaines conditions indiquées dans l’application ou sur le support officiel : période de participation, âge minimum, compte utilisateur, validation manuelle ou automatique.</p>
+  </div>
+
+  <div class="card">
+    <h3>Validation</h3>
+    <p>S. Alba se réserve le droit de vérifier les participations, d’annuler une participation abusive ou frauduleuse, et de modifier ou arrêter un tirage en cas de problème technique ou organisationnel.</p>
+  </div>
+
+  <p class="small">Les modalités exactes d’un tirage surprise sont précisées au moment de son lancement.</p>
+</section>
+
+<section id="confidentialite">
+  <h2>Politique de confidentialité</h2>
+
+  <p><strong>Dernière mise à jour :</strong> 25 mai 2026</p>
+
+  <h3>1. Responsable</h3>
+  <p>Le présent site et les applications associées sont liés à l’univers S. Alba, projet artistique indépendant porté par Sébastien Thomas.</p>
+
+  <h3>2. Données collectées</h3>
+  <p>Selon les fonctionnalités utilisées, certaines données peuvent être collectées : nom ou pseudo, adresse e-mail, messages envoyés, participation à un tirage, informations techniques nécessaires au fonctionnement de l’application, identifiants anonymes ou données liées aux notifications.</p>
+
+  <h3>3. Utilisation des données</h3>
+  <p>Les données sont utilisées pour assurer le bon fonctionnement du site, des applications, de l’espace fans, des notifications, des échanges, des récompenses et des tirages surprise.</p>
+
+  <h3>4. Applications et services tiers</h3>
+  <p>Certaines applications peuvent utiliser des services tiers comme Firebase, Google Play, notifications push, outils d’analyse ou services techniques nécessaires au fonctionnement.</p>
+
+  <h3>5. Notifications</h3>
+  <p>Des notifications peuvent être envoyées pour informer les utilisateurs des nouveautés, mises à jour, annonces importantes, contenus spéciaux ou événements liés au projet.</p>
+
+  <h3>6. Espace fans</h3>
+  <p>Les messages ou contenus publiés dans un espace communautaire peuvent être visibles par d’autres utilisateurs selon le fonctionnement de l’application. Chaque utilisateur reste responsable de ce qu’il publie.</p>
+
+  <h3>7. Tirages surprise</h3>
+  <p>Lors d’un tirage surprise, certaines informations peuvent être nécessaires pour identifier le participant, valider la participation et contacter le gagnant.</p>
+
+  <h3>8. Sécurité</h3>
+  <p>Des mesures raisonnables sont mises en place pour protéger les données. Cependant, aucune sécurité numérique ne peut être garantie comme totalement absolue.</p>
+
+  <h3>9. Conservation</h3>
+  <p>Les données sont conservées uniquement le temps nécessaire au fonctionnement des services, sauf obligation légale ou besoin légitime lié à la sécurité, la preuve ou la gestion du service.</p>
+
+  <h3>10. Droits des utilisateurs</h3>
+  <p>Les utilisateurs peuvent demander l’accès, la modification ou la suppression de leurs données lorsque cela est applicable.</p>
+
+  <h3>11. Mineurs</h3>
+  <p>Les mineurs doivent utiliser les services avec l’autorisation et la surveillance d’un parent ou représentant légal lorsque cela est nécessaire.</p>
+
+  <h3>12. Publicité et identifiants</h3>
+  <p>Certaines applications peuvent utiliser des identifiants publicitaires ou des services de publicité selon les règles de Google Play et les choix disponibles sur l’appareil de l’utilisateur.</p>
+
+  <h3>13. Modifications</h3>
+  <p>Cette politique peut être modifiée à tout moment afin de rester conforme aux évolutions techniques, légales ou fonctionnelles.</p>
+
+  <h3>14. Contact</h3>
+  <p>Pour toute demande liée aux données personnelles ou au projet, vous pouvez utiliser l’adresse de contact indiquée ci-dessous.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact officiel</h2>
+
+  <div class="card">
+    <p><strong>Nom artistique :</strong> S. Alba</p>
+    <p><strong>Nom :</strong> Sébastien Thomas</p>
+    <p><strong>Localisation :</strong> Bassin de Thau, Sète, France</p>
+    <p><strong>Email :</strong> contact.alba.play@gmail.com</p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 S. Alba — Site officiel</p>
+  <p class="small">Auteur-compositeur indépendant · Chaque histoire continue quelque part.</p>
+</footer>
+
+</body>
+</html>

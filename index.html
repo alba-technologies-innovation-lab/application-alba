@@ -7,6 +7,7 @@
 <title>Alba Group - Site officiel</title>
 
 <style>
+
 *{
     margin:0;
     padding:0;
@@ -22,38 +23,39 @@ body{
 header{
     background:linear-gradient(135deg,#0f172a,#1e3a8a);
     color:white;
-    padding:80px 20px;
+    padding:90px 20px;
     text-align:center;
 }
 
 header h1{
-    font-size:48px;
-    margin-bottom:18px;
+    font-size:52px;
+    margin-bottom:20px;
 }
 
 header p{
-    font-size:19px;
+    font-size:20px;
     max-width:850px;
     margin:auto;
-    line-height:1.6;
+    line-height:1.7;
     opacity:0.95;
 }
 
 nav{
     background:white;
-    padding:16px;
+    padding:18px;
     text-align:center;
-    box-shadow:0 2px 10px rgba(0,0,0,0.08);
     position:sticky;
     top:0;
     z-index:100;
+    box-shadow:0 2px 12px rgba(0,0,0,0.08);
 }
 
 nav a{
-    margin:0 12px;
-    color:#111;
+    margin:0 15px;
     text-decoration:none;
+    color:#111;
     font-weight:bold;
+    transition:0.2s;
 }
 
 nav a:hover{
@@ -61,257 +63,335 @@ nav a:hover{
 }
 
 .container{
-    max-width:1150px;
+    max-width:1200px;
     margin:auto;
-    padding:50px 20px;
+    padding:60px 20px;
 }
 
 .section-title{
-    font-size:34px;
+    font-size:38px;
     text-align:center;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .section-text{
     max-width:850px;
-    margin:0 auto 40px auto;
+    margin:0 auto 50px auto;
     text-align:center;
     line-height:1.8;
     color:#444;
 }
 
-.cards{
+.apps{
     display:flex;
     flex-wrap:wrap;
     justify-content:center;
-    gap:24px;
+    gap:25px;
 }
 
-.card{
+.app-card{
     background:white;
     width:270px;
-    border-radius:22px;
-    padding:28px;
+    border-radius:25px;
+    padding:30px;
     text-decoration:none;
     color:#111;
-    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
     transition:0.25s;
 }
 
-.card:hover{
+.app-card:hover{
     transform:translateY(-6px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    box-shadow:0 8px 25px rgba(0,0,0,0.12);
 }
 
-.card h3{
-    font-size:23px;
-    margin-bottom:12px;
+.app-card h3{
+    font-size:24px;
+    margin-bottom:15px;
 }
 
-.card p{
+.app-card p{
     color:#555;
-    line-height:1.6;
+    line-height:1.7;
     font-size:15px;
 }
 
 .info-box{
     background:white;
-    border-radius:24px;
-    padding:34px;
+    border-radius:25px;
+    padding:40px;
     margin-top:45px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
 .info-box h2{
-    font-size:29px;
-    margin-bottom:18px;
+    font-size:30px;
+    margin-bottom:20px;
 }
 
 .info-box p{
-    color:#444;
     line-height:1.8;
-    margin-bottom:14px;
+    color:#444;
+    margin-bottom:15px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:15px;
+    padding:14px 24px;
+    background:#2563eb;
+    color:white;
+    border-radius:14px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.2s;
+}
+
+.button:hover{
+    background:#1d4ed8;
 }
 
 footer{
     background:#0f172a;
     color:white;
     text-align:center;
-    padding:35px 20px;
-    margin-top:60px;
+    padding:40px 20px;
+    margin-top:70px;
 }
 
-footer a{
-    color:#93c5fd;
-    text-decoration:none;
+footer p{
+    line-height:1.8;
 }
 
 @media(max-width:768px){
-    header h1{
-        font-size:36px;
-    }
 
-    header p{
-        font-size:16px;
-    }
-
-    nav a{
-        display:inline-block;
-        margin:7px;
-    }
-
-    .card{
-        width:100%;
-    }
+header h1{
+    font-size:38px;
 }
+
+header p{
+    font-size:17px;
+}
+
+nav a{
+    display:inline-block;
+    margin:8px;
+}
+
+.app-card{
+    width:100%;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Alba Group</h1>
-    <p>
-        Site officiel regroupant les applications, jeux mobiles, services numériques,
-        politiques de confidentialité et pages officielles développées par Alba Group.
-    </p>
+
+<h1>Alba Group</h1>
+
+<p>
+Site officiel regroupant les applications, jeux mobiles,
+services numériques et pages officielles développés par Alba Group.
+</p>
+
 </header>
 
 <nav>
-    <a href="#applications">Applications</a>
-    <a href="#confidentialite">Confidentialité</a>
-    <a href="#contact">Contact</a>
+
+<a href="#applications">Applications</a>
+<a href="#noxa">NOXA+</a>
+<a href="#confidentialite">Confidentialité</a>
+<a href="#contact">Contact</a>
+
 </nav>
 
 <div class="container">
 
 <section id="applications">
-    <h2 class="section-title">Applications et politiques officielles</h2>
 
-    <p class="section-text">
-        Chaque application possède sa propre page officielle ou politique de confidentialité.
-        Ces pages permettent d’informer clairement les utilisateurs sur les données, la sécurité
-        et les règles d’utilisation.
-    </p>
+<h2 class="section-title">Applications officielles</h2>
 
-    <div class="cards">
+<p class="section-text">
+Chaque application possède sa propre page officielle
+ou sa politique de confidentialité dédiée.
+</p>
 
-        <a class="card" href="privacy-boutique7ab.html">
-            <h3>Boutique 7 A&B</h3>
-            <p>
-                Politique de confidentialité de l’application Boutique 7 A&B.
-            </p>
-        </a>
+<div class="apps">
 
-        <a class="card" href="privacy-alba-play.html">
-            <h3>Alba Play</h3>
-            <p>
-                Politique de confidentialité de l’application Alba Play.
-            </p>
-        </a>
+<a class="app-card" href="privacy-boutique7ab.html">
 
-        <a class="card" href="privacy-alba-escape.html">
-            <h3>Alba Escape</h3>
-            <p>
-                Politique de confidentialité du jeu mobile Alba Escape.
-            </p>
-        </a>
+<h3>Boutique 7 A&B</h3>
 
-        <a class="card" href="privacy-pulselove.html">
-            <h3>PulseLove</h3>
-            <p>
-                Politique de confidentialité de l’application PulseLove.
-            </p>
-        </a>
+<p>
+Politique de confidentialité officielle de l’application Boutique 7 A&B.
+</p>
 
-        <a class="card" href="noxa-plus-officiel.html">
-            <h3>NOXA+</h3>
-            <p>
-                Page officielle de NOXA+, plateforme musicale indépendante.
-            </p>
-        </a>
+</a>
 
-    </div>
+<a class="app-card" href="privacy-alba-play.html">
+
+<h3>Alba Play</h3>
+
+<p>
+Politique de confidentialité officielle de l’application Alba Play.
+</p>
+
+</a>
+
+<a class="app-card" href="privacy-alba-escape.html">
+
+<h3>Alba Escape</h3>
+
+<p>
+Politique de confidentialité officielle du jeu Alba Escape.
+</p>
+
+</a>
+
+<a class="app-card" href="privacy-pulselove.html">
+
+<h3>PulseLove</h3>
+
+<p>
+Politique de confidentialité officielle de l’application PulseLove.
+</p>
+
+</a>
+
+<a class="app-card" href="noxa-plus-officiel.html">
+
+<h3>NOXA+</h3>
+
+<p>
+Page officielle de la plateforme musicale NOXA+.
+</p>
+
+</a>
+
+</div>
+
 </section>
 
 <section class="info-box" id="noxa">
-    <h2>NOXA+</h2>
 
-    <p>
-        NOXA+ est une plateforme musicale indépendante pensée pour mettre en avant les artistes,
-        les créateurs et les nouveaux projets musicaux, y compris les créations assistées par IA
-        lorsque les droits et les règles sont respectés.
-    </p>
+<h2>NOXA+</h2>
 
-    <p>
-        La page officielle NOXA+ présente le service, ses règles, son fonctionnement et ses liens utiles.
-    </p>
+<p>
+NOXA+ est une plateforme musicale indépendante permettant
+aux artistes et créateurs de partager leurs contenus musicaux,
+y compris certaines créations assistées par intelligence artificielle
+dans le respect des droits et des règles de diffusion.
+</p>
 
-    <p>
-        <strong>Lien :</strong>
-        <a href="noxa-plus-officiel.html">Accéder à la page officielle NOXA+</a>
-    </p>
+<p>
+La plateforme soutient les projets indépendants,
+les nouveaux artistes et les univers créatifs modernes.
+</p>
+
+<a class="button" href="noxa-plus-officiel.html">
+Accéder à NOXA+
+</a>
+
 </section>
 
 <section class="info-box" id="confidentialite">
-    <h2>Confidentialité et protection des données</h2>
 
-    <p>
-        Les applications Alba Group peuvent collecter uniquement les informations nécessaires
-        au bon fonctionnement des services proposés.
-    </p>
+<h2>Confidentialité et protection des données</h2>
 
-    <p>
-        Selon l’application, les données peuvent inclure des informations techniques,
-        des préférences utilisateur, des statistiques anonymes, des données de compte,
-        ou des informations nécessaires aux fonctionnalités proposées.
-    </p>
+<p>
+Les applications Alba Group peuvent collecter certaines données
+techniques nécessaires au bon fonctionnement des services proposés.
+</p>
 
-    <p>
-        Chaque application dispose de sa propre politique de confidentialité dédiée,
-        accessible depuis les liens présents sur cette page.
-    </p>
+<p>
+Ces données peuvent inclure :
+informations techniques,
+préférences utilisateur,
+identifiants d’appareil,
+statistiques anonymes
+ou données liées aux comptes utilisateurs.
+</p>
 
-    <p>
-        Les utilisateurs peuvent demander des informations ou la suppression de certaines données
-        conformément aux règles applicables.
-    </p>
+<p>
+Chaque application possède sa propre politique
+de confidentialité détaillée accessible depuis sa page dédiée.
+</p>
+
+<p>
+Les utilisateurs peuvent demander la suppression
+de certaines données conformément aux réglementations applicables.
+</p>
+
 </section>
 
 <section class="info-box">
-    <h2>Sécurité et respect des utilisateurs</h2>
 
-    <p>
-        Alba Group met en place des mesures pour limiter les abus, les comportements frauduleux,
-        les contenus interdits, le harcèlement ou toute utilisation contraire aux règles des services.
-    </p>
+<h2>Sécurité et respect des utilisateurs</h2>
 
-    <p>
-        Les contenus publiés par les utilisateurs restent sous leur responsabilité.
-        Tout comportement abusif, illégal ou dangereux peut entraîner une restriction,
-        une suspension ou une suppression de compte.
-    </p>
+<p>
+Alba Group met en place différentes protections
+contre les abus, contenus illégaux,
+harcèlement, comportements dangereux
+ou activités frauduleuses.
+</p>
+
+<p>
+Certaines applications peuvent proposer :
+signalement,
+blocage d’utilisateurs,
+modération automatique
+ou restrictions d’accès selon l’âge.
+</p>
+
+<p>
+Tout contenu publié reste sous la responsabilité de son auteur.
+</p>
+
+<p>
+Tout comportement abusif, violent,
+frauduleux ou illégal
+peut entraîner des sanctions
+allant jusqu’à la suppression définitive du compte.
+</p>
+
 </section>
 
 <section class="info-box" id="contact">
-    <h2>Contact</h2>
 
-    <p>
-        Pour toute question concernant une application, une politique de confidentialité,
-        un signalement ou une demande liée aux données personnelles :
-    </p>
+<h2>Contact</h2>
 
-    <p>
-        📧 <strong>contact.alba.play@gmail.com</strong>
-    </p>
+<p>
+Pour toute question concernant une application,
+une politique de confidentialité,
+un signalement
+ou une demande liée aux données personnelles :
+</p>
+
+<p>
+📧 <strong>contact.alba.play@gmail.com</strong>
+</p>
+
 </section>
 
 </div>
 
 <footer>
-    <p>© 2026 Alba Group - Tous droits réservés.</p>
-    <br>
-    <p>Site officiel des applications, jeux mobiles et services numériques Alba Group.</p>
+
+<p>
+© 2026 Alba Group - Tous droits réservés.
+</p>
+
+<br>
+
+<p>
+Site officiel des applications,
+jeux mobiles et services numériques Alba Group.
+</p>
+
 </footer>
 
 </body>

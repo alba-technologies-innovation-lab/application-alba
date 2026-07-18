@@ -1,6 +1,6 @@
-# Site officiel Alba Group
+# Site officiel Alba Technologies Innovation Lab
 
-Ce dépôt publie le site officiel Alba Group via GitHub Pages.
+Ce dépôt publie le site officiel Alba Technologies Innovation Lab via GitHub Pages.
 
 Applications intégrées :
 - Zoé
